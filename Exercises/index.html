@@ -9,10 +9,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- HEADER -->
-    <div class="header">
+    <header class="header">
       <div class="logo">
         <i class="fa-solid fa-helmet-un"></i>
         <p>Phoenix</p>
@@ -23,9 +29,9 @@
         <div class="item">Games</div>
         <div class="item">Blog</div>
         <div class="item">Contact</div>
-        <button class="btn">BUY TICKET</button>
+        <button class="btn buy-ticket-btn">BUY TICKET</button>
       </div>
-    </div>
+    </header>
     <!-- BODY CONTENT -->
     <div class="main">
       <h1 class="club-name">
@@ -45,10 +51,37 @@
     <!-- FOOTER -->
     <div class="footer">
       <div class="match">
-        <div class="club"></div>
-        <div class="">VS</div>
-        <div class="club"></div>
+        <div class="club-logo">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwfbfKhsI4Xp4XFybtLtNg-Od1ZE_jgLRRiQ&s"
+            alt="phoenix"
+            class=""
+          />
+          <p>phoenix</p>
+        </div>
+        <small>vs</small>
+        <div class="club-logo">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwfbfKhsI4Xp4XFybtLtNg-Od1ZE_jgLRRiQ&s"
+            alt="phoenix"
+            class=""
+          />
+          <p>jacksonville</p>
+        </div>
       </div>
+
+      <div class="match-title">
+        <p>BASEBALL CHAMPIONS LEAGUE</p>
+        <small>Semi-Final</small>
+      </div>
+
+      <div class="timer">
+        <div><span>171</span><small>Days</small></div>
+        <div><span>11</span><small>Hours</small></div>
+        <div><span>10</span><small>Minutes</small></div>
+        <div><span>39</span><small>Seconds</small></div>
+      </div>
+      <button class="btn buy-tickets-btn">Buy Tickets</button>
     </div>
   </body>
 </html>

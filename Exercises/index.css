@@ -1,6 +1,12 @@
+
+
+body{
+    font-family: "Roboto", sans-serif;
+    margin:0;
+    
+}
+
 /* HEADER */
-
-
 .header {
     display: flex;
     flex-direction: row;
@@ -10,28 +16,42 @@
     position: fixed;
     top:0;
     width:100%;
+    z-index: 10;
 }
 
 
 .logo {
-    background-color: rgb(36, 36, 36);
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
-    gap:0;
+    gap:2px;
     flex:1;
     height: 100%;
+    font-size:24px;
+}
+
+.logo::before {
+  content: "";
+  position: absolute;
+  left:-100px;
+  inset: 0;
+  background-color: rgb(36, 36, 36);
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
 }
 
 .logo p{
     color:white;
     text-transform: uppercase;
+    z-index:10;
    
 }
 
 .logo i{
     color:goldenrod;
     font-size:xx-large;
+    z-index:10;
+
 }
 
 .nav-items{
@@ -42,42 +62,55 @@
     align-items:center;
     justify-content: center;
     gap:10px;
+    font-weight:bold;
     text-transform: uppercase;
     color:white;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor:pointer;
+    border:none;
+
+}
+
+
+.buy-ticket-btn{
+    background-color: rgb(36, 36, 36);
+    color:white;
+    font-weight:bold;
 }
 
 /* BODY */
 
 .main {
+
     background-image: url("https://images.pexels.com/photos/163534/baseball-victory-game-sport-163534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-    background-color: antiquewhite;
+    background-repeat: no-repeat;
+    background-size: cover;
     color:white;
     padding: 0 70px;
     height:80vh;
     display:flex;
+    position:relative;
     flex-direction: column;
     align-items: start;
     justify-content: center;
 }
 
-.btn {
-    padding: 4px 5px;
-}
 
 .watch-btn {
     background-color:rgb(51, 139, 201);
     color:white;
-    border: none;
     font-size:small;
-    border-radius: 3px;
 
 }
 
 .get-ticket-btn{
-    background-color:rgb(10, 238, 45);
+    background-color:rgb(11, 185, 37);
     color: white;
-    border:none;
-    border-radius: 3px;
+   
 }
 
 /* FOOTER */
@@ -85,6 +118,83 @@
 .footer {
     display:flex;
     align-items:center;
+    justify-content:space-around;
     background-color: rgb(36, 36, 36);
+    gap:10px;
     height: 20vh;
+}
+
+.match{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    color:white;
+    flex-basis:150px;
+}
+
+.club-logo{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:2px;
+    
+}
+
+.club-logo img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.club-logo p{
+   margin:0;
+   text-transform: uppercase;
+   font-weight:bold;
+   font-size:8px;
+   
+}
+
+.match-title p{
+    color:gray;
+    text-transform: uppercase;
+    font-size:16px;
+    font-weight:bold;
+}
+.match-title small{
+    color:white;
+}
+
+.footer .timer {
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    gap:25px;
+}
+
+.footer .timer div{
+    display:flex;
+    flex-direction:column;
+    align-items: start;
+    justify-content: space-between;
+    gap:15px;
+}
+
+.footer .timer span{
+    color:white;
+    text-transform: uppercase;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.footer .timer small{
+    color:gray;
+}
+
+
+
+.buy-tickets-btn {
+    background-color:rgb(11, 185, 37);
+    color:white;
+    font-weight:bold;
 }
