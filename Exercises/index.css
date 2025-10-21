@@ -1,0 +1,90 @@
+/* HEADER */
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 15vh;
+    position: fixed;
+    top:0;
+    width:100%;
+}
+
+
+.logo {
+    background-color: rgb(36, 36, 36);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:0;
+    flex:1;
+    height: 100%;
+}
+
+.logo p{
+    color:white;
+    text-transform: uppercase;
+   
+}
+
+.logo i{
+    color:goldenrod;
+    font-size:xx-large;
+}
+
+.nav-items{
+    background-color: rgba(255, 255, 255, 0.1);
+    height:70%;
+    display:flex;
+    flex:3;
+    align-items:center;
+    justify-content: center;
+    gap:10px;
+    text-transform: uppercase;
+    color:white;
+}
+
+/* BODY */
+
+.main {
+    background-image: url("https://images.pexels.com/photos/163534/baseball-victory-game-sport-163534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-color: antiquewhite;
+    color:white;
+    padding: 0 70px;
+    height:80vh;
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.btn {
+    padding: 4px 5px;
+}
+
+.watch-btn {
+    background-color:rgb(51, 139, 201);
+    color:white;
+    border: none;
+    font-size:small;
+    border-radius: 3px;
+
+}
+
+.get-ticket-btn{
+    background-color:rgb(10, 238, 45);
+    color: white;
+    border:none;
+    border-radius: 3px;
+}
+
+/* FOOTER */
+
+.footer {
+    display:flex;
+    align-items:center;
+    background-color: rgb(36, 36, 36);
+    height: 20vh;
+}
