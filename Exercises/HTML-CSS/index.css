@@ -198,3 +198,15 @@ body{
     color:white;
     font-weight:bold;
 }
+
+/* RESPONSIVE */
+
+@media (max-width:768px){
+    .menu-toggle {
+        font-size:28;
+        color:white;
+        cursor:pointer;
+        display:block;
+    }
+
+}
