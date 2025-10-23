@@ -13,6 +13,10 @@ main a {
   color: #3d5a97;
 }
 
+.signup-options {
+  width: 85%;
+}
+
 .signup-logo {
   height: 50px;
   width: 50px;
